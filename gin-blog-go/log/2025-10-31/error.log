@@ -1,0 +1,25 @@
+eaon-blog2025-10-31 11:52:40.943	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/server/api/User.go:44	注册失败!
+eaon-blog2025-10-31 11:57:38.115	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/server/api/User.go:45	注册失败!
+eaon-blog2025-10-31 11:57:42.349	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/server/api/User.go:45	注册失败!
+eaon-blog2025-10-31 13:06:28.221	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/server/api/User.go:45	注册失败!
+eaon-blog2025-10-31 13:22:34.315	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/utils/jwt.go:34	重新写入cookie token失败,未能成功解析token,请检查请求头是否存在x-token且claims是否为规定结构
+eaon-blog2025-10-31 13:24:17.572	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/utils/jwt.go:35	重新写入cookie token失败,未能成功解析token,请检查请求头是否存在x-token且claims是否为规定结构
+eaon-blog2025-10-31 15:22:46.536	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/server/api/Post.go:44	chain有问题，更新post失败，请重新登录!
+eaon-blog2025-10-31 15:23:46.426	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/server/api/Post.go:52	当前用户不是文章的作者!
+eaon-blog2025-10-31 15:25:18.514	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/server/api/Post.go:52	当前用户不是文章的作者!
+eaon-blog2025-10-31 15:25:50.671	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/server/api/Post.go:53	当前用户不是文章的作者!
+eaon-blog2025-10-31 15:27:13.294	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/server/api/Post.go:53	当前用户不是文章的作者!
+eaon-blog2025-10-31 15:33:38.333	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/server/api/Post.go:79	删除Post失败!	{"error": "WHERE conditions required"}
+eaon-blog2025-10-31 15:34:21.555	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/server/api/Post.go:79	删除Post失败!	{"error": "WHERE conditions required"}
+eaon-blog2025-10-31 15:38:31.960	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/server/api/Post.go:24	创建文章，标题和内容不能为空
+eaon-blog2025-10-31 15:49:53.107	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/server/api/Comment.go:19	获取Article失败!	{"error": "Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND `comments`.`deleted_at` IS NULL' at line 1"}
+eaon-blog2025-10-31 16:13:40.966	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/server/api/Comment.go:37	评论不能为空
+eaon-blog2025-10-31 16:14:26.961	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/server/api/Comment.go:37	评论不能为空
+eaon-blog2025-10-31 16:15:41.621	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/server/api/Comment.go:38	评论不能为空
+eaon-blog2025-10-31 16:16:40.701	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/server/api/Comment.go:48	创建Post失败!	{"error": "sql: converting argument $5 type: unsupported type blog.User, a struct"}
+eaon-blog2025-10-31 16:18:35.200	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/server/api/Comment.go:49	创建Post失败!	{"error": "sql: converting argument $5 type: unsupported type blog.User, a struct"}
+eaon-blog2025-10-31 16:21:20.044	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/utils/jwt.go:35	重新写入cookie token失败,未能成功解析token,请检查请求头是否存在x-token且claims是否为规定结构
+eaon-blog2025-10-31 16:37:09.527	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/server/api/Comment.go:38	评论不能为空
+eaon-blog2025-10-31 16:40:42.091	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/utils/jwt.go:35	重新写入cookie token失败,未能成功解析token,请检查请求头是否存在x-token且claims是否为规定结构
+eaon-blog2025-10-31 16:40:45.032	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/utils/jwt.go:35	重新写入cookie token失败,未能成功解析token,请检查请求头是否存在x-token且claims是否为规定结构
+eaon-blog2025-10-31 16:40:57.618	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/utils/jwt.go:35	重新写入cookie token失败,未能成功解析token,请检查请求头是否存在x-token且claims是否为规定结构

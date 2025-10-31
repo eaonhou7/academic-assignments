@@ -1,0 +1,30 @@
+app:
+  name: "gin-log"
+  env: local # 修改为public可以关闭路由日志输出
+  addr: 8888
+  use-log: true
+# mysql connect configuration
+mysql:
+  host: "10.41.3.224"
+  port: 3306
+  user: "root"
+  password: "goelia1995"
+  database: "eaon_blog"
+  config: "parseTime=true"
+# jwt configuration
+jwt:
+  signing-key: qmPlus
+  expires-time-day: 7
+  buffer-time-day: 1
+  issuer: qmPlus
+# zap logger configuration
+zap:
+  level: info
+  format: console
+  prefix: "eaon-blog"
+  director: log
+  show-line: true
+  encode-level: LowercaseColorLevelEncoder
+  stacktrace-key: stacktrace
+  log-in-console: true
+  retention-day: -1
