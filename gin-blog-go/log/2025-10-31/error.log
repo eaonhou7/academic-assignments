@@ -23,3 +23,10 @@ eaon-blog2025-10-31 16:37:09.527	[31merror[0m	/Users/eaon/learn/academic-assig
 eaon-blog2025-10-31 16:40:42.091	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/utils/jwt.go:35	重新写入cookie token失败,未能成功解析token,请检查请求头是否存在x-token且claims是否为规定结构
 eaon-blog2025-10-31 16:40:45.032	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/utils/jwt.go:35	重新写入cookie token失败,未能成功解析token,请检查请求头是否存在x-token且claims是否为规定结构
 eaon-blog2025-10-31 16:40:57.618	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/utils/jwt.go:35	重新写入cookie token失败,未能成功解析token,请检查请求头是否存在x-token且claims是否为规定结构
+eaon-blog2025-10-31 17:11:58.825	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/server/api/User.go:33	用户名密码不匹配!
+eaon-blog2025-10-31 17:12:42.782	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/server/api/User.go:33	用户名密码不匹配!
+eaon-blog2025-10-31 17:13:34.055	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/server/api/User.go:33	用户名密码不匹配!
+eaon-blog2025-10-31 17:22:48.694	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/server/api/Post.go:84	文章不存在，无法删除!
+eaon-blog2025-10-31 17:24:01.205	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/server/api/Post.go:84	文章不存在，无法删除!
+eaon-blog2025-10-31 17:24:30.893	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/server/api/Post.go:84	文章不存在，无法删除!
+eaon-blog2025-10-31 17:24:35.324	[31merror[0m	/Users/eaon/learn/academic-assignments/gin-blog-go/server/api/Post.go:89	当前用户不是文章的作者!

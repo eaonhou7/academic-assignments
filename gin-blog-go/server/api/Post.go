@@ -81,8 +81,8 @@ func (s *PostApi) Delete(c *gin.Context) {
 	currentService := service.OperationPostService{}
 	oldPost, _ := currentService.Detail(id)
 	if oldPost.ID <= 0 {
-		global.GLOBAL_ZAP.Error("文章不存在，无法更新!")
-		response.NoFound("获取chain失败，更新post失败，请重新登录", c)
+		global.GLOBAL_ZAP.Error("文章不存在，无法删除!")
+		response.NoFound("文章不存在，无法删除!", c)
 		return
 	}
 	if oldPost.UserID != currentUserId {
@@ -96,7 +96,7 @@ func (s *PostApi) Delete(c *gin.Context) {
 		response.FailWithMessage("删除Post失败", c)
 		return
 	}
-	response.OkWithMessage("更新成功", c)
+	response.OkWithMessage("删除成功", c)
 }
 
 func (s *PostApi) List(c *gin.Context) {

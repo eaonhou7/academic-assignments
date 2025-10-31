@@ -24,7 +24,7 @@ func initializeBlog() {
 	if global.GLOBAL_DB != nil {
 		// 建表
 		initapp.RegisterTables() // 初始化表
-
+		// 生成默认数据
 		//initapp.InitBlogData()
 	}
 }

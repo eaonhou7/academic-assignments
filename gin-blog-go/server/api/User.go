@@ -31,7 +31,7 @@ func (s *UserApi) Login(c *gin.Context) {
 
 	if user.Password != utils.Md5Encrypt(userRegister.Password) {
 		global.GLOBAL_ZAP.Error("用户名密码不匹配!", zap.Error(err))
-		response.FailWithMessage("用户名密码不匹配", c)
+		response.NoFound("用户名密码不匹配", c)
 		return
 	}
 	token, err := utils.GenerateToken(user.ID, user.Username)
