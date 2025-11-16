@@ -57,10 +57,6 @@ async function main() {
   if (currentImpl !== boxV1Address) {
     throw new Error("implementation 初始化失败");
   }
-  console.log(boxV1Address, currentImpl);
-  // 验证 implementation 是否设置成功（调用代理合约自身的方法）
-  // const currentImpl = await proxyContract.retrieve2(); 
-  // console.log("代理当前关联的逻辑合约地址:", currentImpl);
 
   // 用逻辑合约的ABI关联代理地址（创建业务调用实例）
   const boxProxy = BoxV1.attach(proxyAddress); 
