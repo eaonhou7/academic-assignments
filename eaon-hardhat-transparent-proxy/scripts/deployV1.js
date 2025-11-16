@@ -36,6 +36,8 @@ async function main() {
   const proxyContract = TransparentProxyContract.attach(proxyContractAddress);
   const proxyAddress = await proxyContract.getAddress(); 
 
+  console.log("透明代理合约地址:", proxyAddress, proxyContractAddress);
+
   // 部署 BoxV1 作为逻辑合约
   const BoxV1 = await ethers.getContractFactory("BoxV1", logicDeployer);
   console.log("正在部署 BoxV1 逻辑合约...");
@@ -55,21 +57,25 @@ async function main() {
   if (currentImpl !== boxV1Address) {
     throw new Error("implementation 初始化失败");
   }
+  console.log(boxV1Address, currentImpl);
   // 验证 implementation 是否设置成功（调用代理合约自身的方法）
   // const currentImpl = await proxyContract.retrieve2(); 
   // console.log("代理当前关联的逻辑合约地址:", currentImpl);
 
   // 用逻辑合约的ABI关联代理地址（创建业务调用实例）
-  const boxProxy = BoxV1.attach(proxyContractAddress); 
+  const boxProxy = BoxV1.attach(proxyAddress); 
 
   // 验证合约功能
   console.log("\n正在验证初始部署..."); 
-  await boxProxy.store(42);
+  const tx1 = await boxProxy.store(42);
+  const tx1Receipt = await tx1.wait();
+  console.log("tx1 交易收据:", tx1Receipt.status);
   const value = await boxProxy.retrieve();
   console.log("初始值:", value.toString());
 
-  await boxProxy.setName("My Upgradeable Box");
-  const name = await box.getName();
+  const tx2 = await boxProxy.setName("My Upgradeable Box");
+  await tx2.wait();
+  const name = await boxProxy.getName();
   console.log("初始名称:", name);
 
   const version = await boxProxy.getVersion();

@@ -24,27 +24,28 @@ async function main() {
     const transparentProxy = await TransparentProxy.deploy();
     console.log("⏳ 等待交易确认...");
     await transparentProxy.waitForDeployment();
-    console.log("✅ 逻辑合约地址:", transparentProxy.target);
+    console.log("✅ 代理合约地址:", transparentProxy.target);
 
     const transparentProxy2 = await TransparentProxy.deploy();
     console.log("⏳ 等待交易确认...");
     await transparentProxy2.waitForDeployment();
-    console.log("✅ 逻辑合约2地址:", transparentProxy2.target);
+    console.log("✅ 代理合约2地址:", transparentProxy2.target);
 
 
     // 验证合约功能
     console.log("\n正在初始部署...");
     // 指定合约调用者
     transparentProxy.connect(deployer);
-    await transparentProxy.initable('0x73511669fd4dE447feD18BB79bAFeAC93aB7F31f');
-    const imp = await transparentProxy.retrive();
+    const tx = await transparentProxy.initable('0x43ca3D2C94be00692D207C6A1e60D8B325c6f12f');
+    await tx.wait();
+    const imp = await transparentProxy.retrieveImplementation();
     console.log(imp);
 
-    await transparentProxy.upgrade('0x2546bcd3c84621e976d8185a91a922ae77ecec30');
-    console.log("\n正在更新目标地址...");
+    // await transparentProxy.upgrade('0x2546bcd3c84621e976d8185a91a922ae77ecec30');
+    // console.log("\n正在更新目标地址...");
 
-    const imp2 = await transparentProxy.retrive2();
-    console.log("\n获取新目标合约地址...", imp2);
+    // const imp2 = await transparentProxy.retrive2();
+    // console.log("\n获取新目标合约地址...", imp2);
 
     console.log("\nover");
 }
