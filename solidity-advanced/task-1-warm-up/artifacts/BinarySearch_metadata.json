@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "arr",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "target",
+						"type": "uint256"
+					}
+				],
+				"name": "binarySear",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"job-6-binary-ssearch/BinarySearch.sol": "BinarySearch"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"job-6-binary-ssearch/BinarySearch.sol": {
+			"keccak256": "0x0244a9c8e776dae6af3f160b49753366f37740ad43d27eff216595d790f79fc7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://00afa9f21f76c5cca71fe3478f88db559e57a3ae42bec2e4a2cedbe601758930",
+				"dweb:/ipfs/QmSB1f8SBV8DsPMevpMaQinBXcuNTqRp5EDpmQQZeBBvR2"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,112 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "s1",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "s2",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "s3",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "s4",
+						"type": "string"
+					}
+				],
+				"name": "concatStrings",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "x",
+						"type": "uint256"
+					}
+				],
+				"name": "intToRoman",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "s",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"job-4-int-to-roman/IntToRoman.sol": "IntToRoman"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"job-4-int-to-roman/IntToRoman.sol": {
+			"keccak256": "0x3daad9d9c1152ff10c9efc4e6d4b7a6b70f685f4c83c7f606f24413aa9b0470f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://411f57ca215bb087b4dac9aef09e038bc5bb196e21eb6e1a98ee0ccee788dd7f",
+				"dweb:/ipfs/QmZNssyCyFNsr8UF1bXfbmdj17DTfcx8N954WPVc4yeamQ"
+			]
+		}
+	},
+	"version": 1
+}

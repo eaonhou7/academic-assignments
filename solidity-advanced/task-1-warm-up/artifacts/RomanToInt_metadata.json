@@ -1,0 +1,84 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "str",
+						"type": "string"
+					}
+				],
+				"name": "romanToInt",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes",
+						"name": "_byte",
+						"type": "bytes"
+					}
+				],
+				"name": "romanToIntBytes",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"job-3-roman-to-int/RomanToInt.sol": "RomanToInt"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"job-3-roman-to-int/RomanToInt.sol": {
+			"keccak256": "0xa1a22890bdf54fc1fb88c4918c647297498fb24bffe2c1413bbd643321f4edc8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://748e0950b9a4c751bfcefa8d5f3fcbf7a1dabcee04b3b3c4d5fab904000b9bad",
+				"dweb:/ipfs/QmZqciQxRbN1KW8aWwMHUKQTTNA88t3kf2x9RdJAnErgWA"
+			]
+		}
+	},
+	"version": 1
+}
