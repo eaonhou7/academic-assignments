@@ -121,7 +121,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("交易确认失败：%v", err)
 	}
-	if receipt.Status != 1 { // 1=交易成功，0=失败
+	if receiptIncrement.Status != 1 { // 1=交易成功，0=失败
 		log.Fatalf("交易执行失败，状态码：%d", receiptIncrement.Status)
 	}
 	fmt.Println("交易已确认！")
